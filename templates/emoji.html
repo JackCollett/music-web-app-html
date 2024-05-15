@@ -19,3 +19,18 @@
     <!-- Anything between {{ and }} is interpreted in this way -->
   </body>
 </html>
+
+
+<html>
+  <head></head>
+  <body>
+    <h1>Albums</h1>
+
+    {% for album in albums %}
+      <div>
+        Title: {{album.title}}
+        Released: {{album.release_year}}
+      </div>
+    {% endfor %}
+  </body>
+</html>
